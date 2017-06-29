@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B60550B11F054D7E00939165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60550B01F054D7E00939165 /* AppDelegate.swift */; };
+		B60550B31F054D7E00939165 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60550B21F054D7E00939165 /* ViewController.swift */; };
+		B60550B61F054D7E00939165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60550B41F054D7E00939165 /* Main.storyboard */; };
+		B60550B81F054D7E00939165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60550B71F054D7E00939165 /* Assets.xcassets */; };
+		B60550BB1F054D7E00939165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60550B91F054D7E00939165 /* LaunchScreen.storyboard */; };
+		B60550C61F054D7E00939165 /* FritterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60550C51F054D7E00939165 /* FritterAppTests.swift */; };
+		B60550D11F054D7E00939165 /* FritterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60550D01F054D7E00939165 /* FritterAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B60550C21F054D7E00939165 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B60550A51F054D7E00939165 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B60550AC1F054D7E00939165;
+			remoteInfo = FritterApp;
+		};
+		B60550CD1F054D7E00939165 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B60550A51F054D7E00939165 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B60550AC1F054D7E00939165;
+			remoteInfo = FritterApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B60550AD1F054D7E00939165 /* FritterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FritterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60550B01F054D7E00939165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B60550B21F054D7E00939165 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B60550B51F054D7E00939165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B60550B71F054D7E00939165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B60550BA1F054D7E00939165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B60550BC1F054D7E00939165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B60550C11F054D7E00939165 /* FritterAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FritterAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60550C51F054D7E00939165 /* FritterAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FritterAppTests.swift; sourceTree = "<group>"; };
+		B60550C71F054D7E00939165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B60550CC1F054D7E00939165 /* FritterAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FritterAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60550D01F054D7E00939165 /* FritterAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FritterAppUITests.swift; sourceTree = "<group>"; };
+		B60550D21F054D7E00939165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B60550AA1F054D7E00939165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B60550BE1F054D7E00939165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B60550C91F054D7E00939165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B60550A41F054D7E00939165 = {
+			isa = PBXGroup;
+			children = (
+				B60550AF1F054D7E00939165 /* FritterApp */,
+				B60550C41F054D7E00939165 /* FritterAppTests */,
+				B60550CF1F054D7E00939165 /* FritterAppUITests */,
+				B60550AE1F054D7E00939165 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B60550AE1F054D7E00939165 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B60550AD1F054D7E00939165 /* FritterApp.app */,
+				B60550C11F054D7E00939165 /* FritterAppTests.xctest */,
+				B60550CC1F054D7E00939165 /* FritterAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B60550AF1F054D7E00939165 /* FritterApp */ = {
+			isa = PBXGroup;
+			children = (
+				B60550B01F054D7E00939165 /* AppDelegate.swift */,
+				B60550B21F054D7E00939165 /* ViewController.swift */,
+				B60550B41F054D7E00939165 /* Main.storyboard */,
+				B60550B71F054D7E00939165 /* Assets.xcassets */,
+				B60550B91F054D7E00939165 /* LaunchScreen.storyboard */,
+				B60550BC1F054D7E00939165 /* Info.plist */,
+			);
+			path = FritterApp;
+			sourceTree = "<group>";
+		};
+		B60550C41F054D7E00939165 /* FritterAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B60550C51F054D7E00939165 /* FritterAppTests.swift */,
+				B60550C71F054D7E00939165 /* Info.plist */,
+			);
+			path = FritterAppTests;
+			sourceTree = "<group>";
+		};
+		B60550CF1F054D7E00939165 /* FritterAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B60550D01F054D7E00939165 /* FritterAppUITests.swift */,
+				B60550D21F054D7E00939165 /* Info.plist */,
+			);
+			path = FritterAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B60550AC1F054D7E00939165 /* FritterApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B60550D51F054D7E00939165 /* Build configuration list for PBXNativeTarget "FritterApp" */;
+			buildPhases = (
+				B60550A91F054D7E00939165 /* Sources */,
+				B60550AA1F054D7E00939165 /* Frameworks */,
+				B60550AB1F054D7E00939165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FritterApp;
+			productName = FritterApp;
+			productReference = B60550AD1F054D7E00939165 /* FritterApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B60550C01F054D7E00939165 /* FritterAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B60550D81F054D7E00939165 /* Build configuration list for PBXNativeTarget "FritterAppTests" */;
+			buildPhases = (
+				B60550BD1F054D7E00939165 /* Sources */,
+				B60550BE1F054D7E00939165 /* Frameworks */,
+				B60550BF1F054D7E00939165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B60550C31F054D7E00939165 /* PBXTargetDependency */,
+			);
+			name = FritterAppTests;
+			productName = FritterAppTests;
+			productReference = B60550C11F054D7E00939165 /* FritterAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B60550CB1F054D7E00939165 /* FritterAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B60550DB1F054D7E00939165 /* Build configuration list for PBXNativeTarget "FritterAppUITests" */;
+			buildPhases = (
+				B60550C81F054D7E00939165 /* Sources */,
+				B60550C91F054D7E00939165 /* Frameworks */,
+				B60550CA1F054D7E00939165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B60550CE1F054D7E00939165 /* PBXTargetDependency */,
+			);
+			name = FritterAppUITests;
+			productName = FritterAppUITests;
+			productReference = B60550CC1F054D7E00939165 /* FritterAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B60550A51F054D7E00939165 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Peter;
+				TargetAttributes = {
+					B60550AC1F054D7E00939165 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					B60550C01F054D7E00939165 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B60550AC1F054D7E00939165;
+					};
+					B60550CB1F054D7E00939165 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B60550AC1F054D7E00939165;
+					};
+				};
+			};
+			buildConfigurationList = B60550A81F054D7E00939165 /* Build configuration list for PBXProject "FritterApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B60550A41F054D7E00939165;
+			productRefGroup = B60550AE1F054D7E00939165 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B60550AC1F054D7E00939165 /* FritterApp */,
+				B60550C01F054D7E00939165 /* FritterAppTests */,
+				B60550CB1F054D7E00939165 /* FritterAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B60550AB1F054D7E00939165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60550BB1F054D7E00939165 /* LaunchScreen.storyboard in Resources */,
+				B60550B81F054D7E00939165 /* Assets.xcassets in Resources */,
+				B60550B61F054D7E00939165 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B60550BF1F054D7E00939165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B60550CA1F054D7E00939165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B60550A91F054D7E00939165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60550B31F054D7E00939165 /* ViewController.swift in Sources */,
+				B60550B11F054D7E00939165 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B60550BD1F054D7E00939165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60550C61F054D7E00939165 /* FritterAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B60550C81F054D7E00939165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60550D11F054D7E00939165 /* FritterAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B60550C31F054D7E00939165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B60550AC1F054D7E00939165 /* FritterApp */;
+			targetProxy = B60550C21F054D7E00939165 /* PBXContainerItemProxy */;
+		};
+		B60550CE1F054D7E00939165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B60550AC1F054D7E00939165 /* FritterApp */;
+			targetProxy = B60550CD1F054D7E00939165 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B60550B41F054D7E00939165 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B60550B51F054D7E00939165 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B60550B91F054D7E00939165 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B60550BA1F054D7E00939165 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B60550D31F054D7E00939165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B60550D41F054D7E00939165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B60550D61F054D7E00939165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FritterApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cambrian.FritterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B60550D71F054D7E00939165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FritterApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cambrian.FritterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B60550D91F054D7E00939165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FritterAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cambrian.FritterAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FritterApp.app/FritterApp";
+			};
+			name = Debug;
+		};
+		B60550DA1F054D7E00939165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FritterAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cambrian.FritterAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FritterApp.app/FritterApp";
+			};
+			name = Release;
+		};
+		B60550DC1F054D7E00939165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FritterAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cambrian.FritterAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FritterApp;
+			};
+			name = Debug;
+		};
+		B60550DD1F054D7E00939165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FritterAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cambrian.FritterAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FritterApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B60550A81F054D7E00939165 /* Build configuration list for PBXProject "FritterApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60550D31F054D7E00939165 /* Debug */,
+				B60550D41F054D7E00939165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B60550D51F054D7E00939165 /* Build configuration list for PBXNativeTarget "FritterApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60550D61F054D7E00939165 /* Debug */,
+				B60550D71F054D7E00939165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B60550D81F054D7E00939165 /* Build configuration list for PBXNativeTarget "FritterAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60550D91F054D7E00939165 /* Debug */,
+				B60550DA1F054D7E00939165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B60550DB1F054D7E00939165 /* Build configuration list for PBXNativeTarget "FritterAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60550DC1F054D7E00939165 /* Debug */,
+				B60550DD1F054D7E00939165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B60550A51F054D7E00939165 /* Project object */;
+}
