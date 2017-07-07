@@ -14,6 +14,9 @@
 		B60550BB1F054D7E00939165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60550B91F054D7E00939165 /* LaunchScreen.storyboard */; };
 		B60550C61F054D7E00939165 /* FritterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60550C51F054D7E00939165 /* FritterAppTests.swift */; };
 		B60550D11F054D7E00939165 /* FritterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60550D01F054D7E00939165 /* FritterAppUITests.swift */; };
+		B6D009CB1F0FE3ED00CFF176 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D009CA1F0FE3ED00CFF176 /* Registration.swift */; };
+		B6D009CD1F0FE96200CFF176 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D009CC1F0FE96200CFF176 /* NewsFeed.swift */; };
+		B6D009CF1F0FEB6000CFF176 /* SearchFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D009CE1F0FEB6000CFF176 /* SearchFriend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		B60550CC1F054D7E00939165 /* FritterAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FritterAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60550D01F054D7E00939165 /* FritterAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FritterAppUITests.swift; sourceTree = "<group>"; };
 		B60550D21F054D7E00939165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D009CA1F0FE3ED00CFF176 /* Registration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		B6D009CC1F0FE96200CFF176 /* NewsFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
+		B6D009CE1F0FEB6000CFF176 /* SearchFriend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFriend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				B60550B01F054D7E00939165 /* AppDelegate.swift */,
 				B60550B21F054D7E00939165 /* ViewController.swift */,
 				B60550B41F054D7E00939165 /* Main.storyboard */,
+				B6D009CA1F0FE3ED00CFF176 /* Registration.swift */,
+				B6D009CC1F0FE96200CFF176 /* NewsFeed.swift */,
+				B6D009CE1F0FEB6000CFF176 /* SearchFriend.swift */,
 				B60550B71F054D7E00939165 /* Assets.xcassets */,
 				B60550B91F054D7E00939165 /* LaunchScreen.storyboard */,
 				B60550BC1F054D7E00939165 /* Info.plist */,
@@ -260,6 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B60550B31F054D7E00939165 /* ViewController.swift in Sources */,
+				B6D009CB1F0FE3ED00CFF176 /* Registration.swift in Sources */,
+				B6D009CF1F0FEB6000CFF176 /* SearchFriend.swift in Sources */,
+				B6D009CD1F0FE96200CFF176 /* NewsFeed.swift in Sources */,
 				B60550B11F054D7E00939165 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +519,7 @@
 				B60550D71F054D7E00939165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B60550D81F054D7E00939165 /* Build configuration list for PBXNativeTarget "FritterAppTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +528,7 @@
 				B60550DA1F054D7E00939165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B60550DB1F054D7E00939165 /* Build configuration list for PBXNativeTarget "FritterAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +537,7 @@
 				B60550DD1F054D7E00939165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
