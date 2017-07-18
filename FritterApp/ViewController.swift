@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var userEmailTextField: UITextField!
+    @IBOutlet weak var userPasswordTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func login(_ sender: Any) {
+        let userEmail = userEmailTextField.text
+        let userPassword = userPasswordTextField.text
+        
+        //if userEmil == userEmail stored && userPwd = pwdStored do
+        
+    }
 
 }
 

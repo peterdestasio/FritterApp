@@ -36,6 +36,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iAG-2s-z02"/>
                                     <segue destination="0OK-Xp-pza" kind="show" id="SCd-gd-f89"/>
                                 </connections>
                             </button>
@@ -80,6 +81,10 @@
                         <color key="backgroundColor" red="0.20784313725490194" green="0.71764705882352942" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="ilj-4M-pS4"/>
+                    <connections>
+                        <outlet property="userEmailTextField" destination="ct4-E5-kaf" id="H5e-e0-Xzn"/>
+                        <outlet property="userPasswordTextField" destination="IS2-EH-OBT" id="8si-N4-FPX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,13 +169,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q6i-43-t1D">
-                                <rect key="frame" x="38" y="266" width="298" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fvA-bF-OLB">
                                 <rect key="frame" x="38" y="304" width="298" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -234,6 +232,9 @@
                                 <state key="normal" title="Sign up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUp:" destination="dNx-6X-gIC" eventType="touchUpInside" id="Zo6-ep-PK8"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Sign-up for Fritter: it's only 5 millions dollars a Month!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="21A-c1-enF">
                                 <rect key="frame" x="74" y="181" width="227" height="68"/>
@@ -247,10 +248,27 @@
                                 <rect key="frame" x="74" y="72" width="227" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q6i-43-t1D">
+                                <rect key="frame" x="38" y="304" width="298" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.20784313730000001" green="0.71764705880000002" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="R7H-T4-vJk"/>
+                    <connections>
+                        <outlet property="birthdayTextField" destination="P2Z-z2-dxN" id="GNq-u9-VW3"/>
+                        <outlet property="ccvTextField" destination="k25-FT-x61" id="WpS-65-1Qb"/>
+                        <outlet property="cityTextField" destination="DYC-zc-1xD" id="7jd-Rg-j0x"/>
+                        <outlet property="creditCardNumberTextField" destination="MYu-Om-CJD" id="re4-m5-TgG"/>
+                        <outlet property="firstNameTextField" destination="pBU-TO-u7R" id="1s9-Qw-D6b"/>
+                        <outlet property="lastNameTextField" destination="neE-fC-UQh" id="fcZ-Nq-Et1"/>
+                        <outlet property="userEmailTextField" destination="fvA-bF-OLB" id="wAJ-1z-2Gb"/>
+                        <outlet property="userPasswordTextField" destination="cX1-iY-tC5" id="9mx-xD-Sfm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QzF-2p-W3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
