@@ -65,18 +65,22 @@ class ViewController: UIViewController {
         let userPassword = userPasswordTextField.text
         
         var i = 0
+        var position: Int! //variable that store the position of the user email if it is founded
+        
         while(i<emails.count){
             
-            if(userEmail == emails[i]) && (userPassword == passwords[i]){
-                
-                print(emails[i])
-                print(passwords[i])
-                print("logged")
+            if(userEmail == emails[i]){
+                position = i
             }
-            else {
-                 print("wrong input")
-                
-                /*
+            
+            
+            i+=1
+        }
+        
+        if(position != nil){
+            if(userPassword==passwords[position]){
+                print("Logged")
+            }else{
                 // create the alert
                 let alert = UIAlertController(title: "Error", message: "Wrong Input", preferredStyle: UIAlertControllerStyle.alert)
                 
@@ -85,16 +89,20 @@ class ViewController: UIViewController {
                 
                 // show the alert
                 self.present(alert, animated: true, completion: nil)
-                 
- */
-                print(emails[i])
-                    print(passwords[i])
-                break
-               
             }
-            i+=1
+        }else{
+            // create the alert
+            let alert = UIAlertController(title: "Error", message: "Wrong Input", preferredStyle: UIAlertControllerStyle.alert)
+            
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
         }
-
+        
+       
+      
  
        
     }
