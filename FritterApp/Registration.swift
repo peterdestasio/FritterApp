@@ -10,6 +10,7 @@ import UIKit
 
 class Registration: UIViewController {
 
+    @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
     @IBOutlet weak var firstNameTextField: UITextField!
@@ -18,6 +19,8 @@ class Registration: UIViewController {
     @IBOutlet weak var cityTextField: UITextField!
     @IBOutlet weak var creditCardNumberTextField: UITextField!
     @IBOutlet weak var ccvTextField: UITextField!
+    
+    let URL_INSERT = "http://localhost/fritter/serviceinsert.php"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,17 +45,72 @@ class Registration: UIViewController {
     */
     @IBAction func signUp(_ sender: Any) {
         
-        let userEmail = userEmailTextField.text
-        let userPassword = userPasswordTextField.text
-        //let firstName = firstNameTextField.text
-        //let lastName = lastNameTextField.text
-        //let birthday = birthdayTextField.text
-        //let city = cityTextField.text
-        //let creditCardNumber = creditCardNumberTextField.text
-        //let ccv = ccvTextField.text
+        //getting value from text field
+        let userName = userNameTextField.text!
+        let userEmail = userEmailTextField.text!
+        let userPassword = userPasswordTextField.text!
+        let firstName = firstNameTextField.text!
+        let lastName = lastNameTextField.text!
+        let birthday = birthdayTextField.text!
+        let city = cityTextField.text!
+        let creditCardNumber = creditCardNumberTextField.text!
+        let ccv = ccvTextField.text!
         
+        
+        //Create a NSURL
+        let requestURL = NSURL(string: URL_INSERT)
+        
+        // creating NSmutableURLRequest
+        let request = NSMutableURLRequest(url: requestURL! as URL)
+        
+        //SETTING THE METHOD TO POST
+        request.httpMethod = "POST"
+        print("post")
+        
+        //create the POST parameter by concatenating the keys and values from TET-field
+        let postParameter = "user_name=\(userName)&user_email=\(userEmail)&user_pass=\(userPassword)&first_name=\(firstName)&last_name=\(lastName)&birthday=\(birthday)&city=\(city)&credit_card=\(creditCardNumber)&ccv=\(ccv)"
+        print("parametri")
+        request.httpBody = postParameter.data(using: String.Encoding.utf8)
+        print("body")
+        
+            // Create a TASK to send the POST request
+            let task = URLSession.shared.dataTask(with: request as URLRequest){
+                data, response, error in
+                if error != nil{
+                    print("error is \(String(describing: error))")
+                    return
+                }
+                
+                do{
+                    // Read the response FROM Server which is in the JSON Format -- We have to Convert it to SWIFT String -- Decode it
+                    let myJSON = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as?
+                    NSDictionary
+                    print("serializzazione")
+                    //Parsing the json
+                    if let parseJSON = myJSON{
+                        
+                        // Creating the sring in order to store the response form a Server
+                        var msg: String!
+                        
+                        msg = parseJSON["message"] as! String?
+                        //Print the response from SERVER (php & MySQL)
+                        print(msg)
+                    }
+                }catch{
+                    print(error)
+                }
+                
+                
+                
+            }
+            print("task")
+            // Executing the TASK and keep the session Alive btw IOS APP and Server
+            task.resume()
+        }
+    
+    
         //check for empty field
-        
+        /*
         if((userEmail?.isEmpty)! || (userPassword?.isEmpty)!){
             
             //display alert message
@@ -61,7 +119,7 @@ class Registration: UIViewController {
             return;
             
         }
-        
+ 
         //store data
         UserDefaults.standard.set(userEmail, forKey: value(forKey: "userEmail") as! String)
         UserDefaults.standard.set(userPassword, forKey: value(forKey: "userPassword") as! String)
@@ -73,8 +131,11 @@ class Registration: UIViewController {
         let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler: nil);
         
         myAlert.addAction(okAction)
+    */
         
-    }
+        
+        
+    
     
     
     func displayMyAlertMessage(userMessage: String){
@@ -88,6 +149,9 @@ class Registration: UIViewController {
         
         self.present(myAlert, animated: true, completion: nil)
         
-    }
+        }
+
+
 
 }
+

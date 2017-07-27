@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    var url = URL(string:"http://localhost/fritter/serviceselect.php")
+    let url = URL(string:"http://localhost/fritter/serviceselect.php")
         
         do {
             let data = try Data(contentsOf: url!) // received from a network request, for example
