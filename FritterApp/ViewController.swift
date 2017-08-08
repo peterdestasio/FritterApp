@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     
     var emails = [String]()
     var passwords = [String]()
+    var userIDs = [String]()
+    var userNames = [String]()
+    var lastNames = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,10 +37,24 @@ class ViewController: UIViewController {
             for item in json { // loop through data items
                 let obj = item as! NSDictionary
                 for (key, value) in obj {
-                    if((key as! String) == "user_pass"){
+                    if((key as! String) == "user_id")
+                    {
+                        userIDs.append(value as! String)
+                    }
+                    if((key as! String) == "first_name")
+                    {
+                            userNames.append(value as! String)
+                    }
+                    if((key as! String) == "last_name")
+                    {
+                            lastNames.append(value as! String)
+                    }
+                    if((key as! String) == "user_pass")
+                    {
                         passwords.append(value as! String)
                     }
-                    if((key as! String) == "user_email"){
+                    if((key as! String) == "user_email")
+                    {
                         emails.append(value as! String)
                     }
                 }
@@ -79,6 +96,16 @@ class ViewController: UIViewController {
         
         if(position != nil){
             if(userPassword==passwords[position]){
+                
+                let newsFeedController = storyboard?.instantiateViewController(withIdentifier: "newsFeedId") as! NewsFeed
+                newsFeedController.name = lastNames[position]
+                newsFeedController.id = userIDs[position]
+                newsFeedController.surname = lastNames[position]
+                
+                
+                navigationController?.pushViewController(newsFeedController, animated: true)
+                
+                
                 print("Logged")
             }else{
                 // create the alert

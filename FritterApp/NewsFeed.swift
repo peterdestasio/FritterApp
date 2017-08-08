@@ -10,8 +10,23 @@ import UIKit
 
 class NewsFeed: UIViewController {
 
+    @IBOutlet weak var labelUser: UILabel!
+ 
+    @IBOutlet weak var labelID: UILabel!
+    
+    @IBOutlet weak var labelSurname: UILabel!
+    
+    var name: String = ""
+    var id: String = ""
+    var surname: String = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        labelUser.text = name
+        labelID.text = id
+        labelSurname.text = surname
+        
 
         // Do any additional setup after loading the view.
     }
