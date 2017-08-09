@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B604528D1F3AA92D005D9EA1 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B604528C1F3AA92D005D9EA1 /* FriendTableViewCell.swift */; };
 		B60550B11F054D7E00939165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60550B01F054D7E00939165 /* AppDelegate.swift */; };
 		B60550B31F054D7E00939165 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60550B21F054D7E00939165 /* ViewController.swift */; };
 		B60550B61F054D7E00939165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60550B41F054D7E00939165 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B604528C1F3AA92D005D9EA1 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendTableViewCell.swift; path = ../FriendTableViewCell.swift; sourceTree = "<group>"; };
 		B60550AD1F054D7E00939165 /* FritterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FritterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60550B01F054D7E00939165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B60550B21F054D7E00939165 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		B60550AF1F054D7E00939165 /* FritterApp */ = {
 			isa = PBXGroup;
 			children = (
+				B604528C1F3AA92D005D9EA1 /* FriendTableViewCell.swift */,
 				B60550B01F054D7E00939165 /* AppDelegate.swift */,
 				B60550B21F054D7E00939165 /* ViewController.swift */,
 				B60550B41F054D7E00939165 /* Main.storyboard */,
@@ -271,6 +274,7 @@
 				B60550B31F054D7E00939165 /* ViewController.swift in Sources */,
 				B6D009CB1F0FE3ED00CFF176 /* Registration.swift in Sources */,
 				B6D009CF1F0FEB6000CFF176 /* SearchFriend.swift in Sources */,
+				B604528D1F3AA92D005D9EA1 /* FriendTableViewCell.swift in Sources */,
 				B6D009CD1F0FE96200CFF176 /* NewsFeed.swift in Sources */,
 				B60550B11F054D7E00939165 /* AppDelegate.swift in Sources */,
 			);
