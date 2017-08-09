@@ -23,5 +23,10 @@ class FriendTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    @IBAction func follow(_ sender: Any) {
+        
+        print("FOLLOW")
+    }
 
 }

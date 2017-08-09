@@ -18,6 +18,8 @@ class SearchFriend: UIViewController, UITableViewDataSource, UITableViewDelegate
     var userNames = [String]()
     var lastNames = [String]()
     
+    var idUser = 0
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         
@@ -39,7 +41,8 @@ class SearchFriend: UIViewController, UITableViewDataSource, UITableViewDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("USER ID: ")
+        print(idUser)
             
             let url = URL(string:"http://localhost/fritter/serviceselect.php")
             

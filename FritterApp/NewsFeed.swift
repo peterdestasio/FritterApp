@@ -50,6 +50,8 @@ class NewsFeed: UIViewController {
         
         let searchFriendController = storyboard?.instantiateViewController(withIdentifier: "searchFriendID") as! SearchFriend
         
+        searchFriendController.idUser = Int(id)!
+        
         
         navigationController?.pushViewController(searchFriendController, animated: true)
     }
