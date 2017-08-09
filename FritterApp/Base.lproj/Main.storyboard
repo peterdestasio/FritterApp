@@ -109,7 +109,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Orv-s5-js0" kind="show" id="Iqr-Tl-kXb"/>
+                                    <action selector="searchFriends:" destination="0OK-Xp-pza" eventType="touchUpInside" id="aTq-tj-aQh"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Welcome back" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cho-rx-7qQ">
@@ -154,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="1184.8" y="824.43778110944538"/>
         </scene>
-        <!--View Controller-->
+        <!--Search Friend-->
         <scene sceneID="PFL-JD-DXq">
             <objects>
-                <viewController id="Orv-s5-js0" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchFriendID" id="Orv-s5-js0" customClass="SearchFriend" customModule="FritterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NFf-Am-oWy"/>
                         <viewControllerLayoutGuide type="bottom" id="Iks-mb-XF7"/>
@@ -167,7 +167,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Look here for following new people" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4k4-qC-kc8">
-                                <rect key="frame" x="46" y="117" width="297" height="34"/>
+                                <rect key="frame" x="39" y="0.0" width="297" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1529411765" green="0.4941176471" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>

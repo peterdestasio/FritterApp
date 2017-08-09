@@ -46,5 +46,12 @@ class NewsFeed: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func searchFriends(_ sender: Any) {
+        
+        let searchFriendController = storyboard?.instantiateViewController(withIdentifier: "searchFriendID") as! SearchFriend
+        
+        
+        navigationController?.pushViewController(searchFriendController, animated: true)
+    }
 
 }
