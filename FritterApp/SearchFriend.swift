@@ -10,7 +10,7 @@ import UIKit
 
 class SearchFriend: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
-    let animals = ["panda", "lion", "elephant"]
+    //let animals = ["panda", "lion", "elephant"]
     
     var emails = [String]()
     var passwords = [String]()
@@ -62,13 +62,10 @@ class SearchFriend: UIViewController, UITableViewDataSource, UITableViewDelegate
         
         //SETTING THE METHOD TO POST
         request.httpMethod = "POST"
-        print("post")
         
         //create the POST parameter by concatenating the keys and values from TET-field
         let postParameter = "followerID=\(idUser)&followedID=\(userIDs[myIndex])"
-        print("parametri")
         request.httpBody = postParameter.data(using: String.Encoding.utf8)
-        print("body")
         
         // Create a TASK to send the POST request
         let task = URLSession.shared.dataTask(with: request as URLRequest){
@@ -100,7 +97,7 @@ class SearchFriend: UIViewController, UITableViewDataSource, UITableViewDelegate
             
             
         }
-        print("task")
+        
         // Executing the TASK and keep the session Alive btw IOS APP and Server
         task.resume()
         

@@ -13,8 +13,6 @@ class FriendTableViewCell: UITableViewCell {
  
     @IBOutlet weak var labelSur: UILabel!
     
-    var savedID = 0
-  
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,10 +26,6 @@ class FriendTableViewCell: UITableViewCell {
     }
     
     
-    @IBAction func follow(_ sender: Any) {
-        print(savedID)
-       
-    
-    }
+
 
 }

@@ -66,13 +66,10 @@ class Registration: UIViewController {
         
         //SETTING THE METHOD TO POST
         request.httpMethod = "POST"
-        print("post")
         
         //create the POST parameter by concatenating the keys and values from TET-field
         let postParameter = "user_name=\(userName)&user_email=\(userEmail)&user_pass=\(userPassword)&first_name=\(firstName)&last_name=\(lastName)&birthday=\(birthday)&city=\(city)&credit_card=\(creditCardNumber)&ccv=\(ccv)"
-        print("parametri")
         request.httpBody = postParameter.data(using: String.Encoding.utf8)
-        print("body")
         
             // Create a TASK to send the POST request
             let task = URLSession.shared.dataTask(with: request as URLRequest){
@@ -104,7 +101,6 @@ class Registration: UIViewController {
                 
                 
             }
-            print("task")
             // Executing the TASK and keep the session Alive btw IOS APP and Server
             task.resume()
         }
