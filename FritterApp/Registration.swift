@@ -20,6 +20,7 @@ class Registration: UIViewController {
     @IBOutlet weak var creditCardNumberTextField: UITextField!
     @IBOutlet weak var ccvTextField: UITextField!
     
+    //link to service insert to insert a new user
     let URL_INSERT = "http://localhost/fritter/serviceinsert.php"
     
     override func viewDidLoad() {

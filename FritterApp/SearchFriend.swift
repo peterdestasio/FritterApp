@@ -18,7 +18,15 @@ class SearchFriend: UIViewController, UITableViewDataSource, UITableViewDelegate
     var userNames = [String]()
     var lastNames = [String]()
     
+    
+    //id user current session
     var idUser = 0
+    
+    //index of the row clicked
+    var myIndex = 0
+    
+    //for insert following data
+    let URL_INSERT = "http://localhost/fritter/servicefollow.php"
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -34,10 +42,72 @@ class SearchFriend: UIViewController, UITableViewDataSource, UITableViewDelegate
         
         cell.labelName.text = userNames[indexPath.row]
         cell.labelSur.text = lastNames[indexPath.row]
+    
         
         return (cell)
         
     }
+    
+    //function used to track the table clicked
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        myIndex = indexPath.row
+        print(userIDs[myIndex])
+        
+        //Create a NSURL
+        let requestURL = NSURL(string: URL_INSERT)
+        
+        // creating NSmutableURLRequest
+        let request = NSMutableURLRequest(url: requestURL! as URL)
+        
+        //SETTING THE METHOD TO POST
+        request.httpMethod = "POST"
+        print("post")
+        
+        //create the POST parameter by concatenating the keys and values from TET-field
+        let postParameter = "followerID=\(idUser)&followedID=\(userIDs[myIndex])"
+        print("parametri")
+        request.httpBody = postParameter.data(using: String.Encoding.utf8)
+        print("body")
+        
+        // Create a TASK to send the POST request
+        let task = URLSession.shared.dataTask(with: request as URLRequest){
+            data, response, error in
+            if error != nil{
+                print("error is \(String(describing: error))")
+                return
+            }
+            
+            do{
+                // Read the response FROM Server which is in the JSON Format -- We have to Convert it to SWIFT String -- Decode it
+                let myJSON = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as?
+                NSDictionary
+                print("serializzazione")
+                //Parsing the json
+                if let parseJSON = myJSON{
+                    
+                    // Creating the sring in order to store the response form a Server
+                    var msg: String!
+                    
+                    msg = parseJSON["message"] as! String?
+                    //Print the response from SERVER (php & MySQL)
+                    print(msg)
+                }
+            }catch{
+                print(error)
+            }
+            
+            
+            
+        }
+        print("task")
+        // Executing the TASK and keep the session Alive btw IOS APP and Server
+        task.resume()
+        
+        
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

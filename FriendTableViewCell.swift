@@ -12,6 +12,9 @@ class FriendTableViewCell: UITableViewCell {
     @IBOutlet weak var labelName: UILabel!
  
     @IBOutlet weak var labelSur: UILabel!
+    
+    var savedID = 0
+  
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,9 +27,11 @@ class FriendTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    
     @IBAction func follow(_ sender: Any) {
-        
-        print("FOLLOW")
+        print(savedID)
+       
+    
     }
 
 }
