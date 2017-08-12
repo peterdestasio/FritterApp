@@ -22,6 +22,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        userPasswordTextField.isSecureTextEntry = true
         
     let url = URL(string:"http://localhost/fritter/serviceselect.php")
         
