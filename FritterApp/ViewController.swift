@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import CryptoSwift
+
 
 class ViewController: UIViewController {
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
+    
+    
     
     //var data: NSArray = []
     
@@ -23,6 +27,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         userPasswordTextField.isSecureTextEntry = true
+        
+        
+        
         
     let url = URL(string:"http://localhost/fritter/serviceselect.php")
         
@@ -81,6 +88,7 @@ class ViewController: UIViewController {
     @IBAction func login(_ sender: Any) {
         let userEmail = userEmailTextField.text
         let userPassword = userPasswordTextField.text
+        let userPasswordHashed = userPassword?.md5()
         
         var i = 0
         var position: Int! //variable that store the position of the user email if it is founded
@@ -96,10 +104,10 @@ class ViewController: UIViewController {
         }
         
         if(position != nil){
-            if(userPassword==passwords[position]){
+            if(userPasswordHashed==passwords[position]){
                 
                 let newsFeedController = storyboard?.instantiateViewController(withIdentifier: "newsFeedId") as! NewsFeed
-                newsFeedController.name = lastNames[position]
+                newsFeedController.name = userNames[position]
                 newsFeedController.id = userIDs[position]
                 newsFeedController.surname = lastNames[position]
                 

@@ -15,6 +15,7 @@
 		B60550BB1F054D7E00939165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60550B91F054D7E00939165 /* LaunchScreen.storyboard */; };
 		B60550C61F054D7E00939165 /* FritterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60550C51F054D7E00939165 /* FritterAppTests.swift */; };
 		B60550D11F054D7E00939165 /* FritterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60550D01F054D7E00939165 /* FritterAppUITests.swift */; };
+		B6B3F1C41F42661400AF3E6D /* CryptoSwift-master in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B3F1C31F42661400AF3E6D /* CryptoSwift-master */; settings = {ATTRIBUTES = (Required, ); }; };
 		B6D009CB1F0FE3ED00CFF176 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D009CA1F0FE3ED00CFF176 /* Registration.swift */; };
 		B6D009CD1F0FE96200CFF176 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D009CC1F0FE96200CFF176 /* NewsFeed.swift */; };
 		B6D009CF1F0FEB6000CFF176 /* SearchFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D009CE1F0FEB6000CFF176 /* SearchFriend.swift */; };
@@ -35,6 +36,27 @@
 			remoteGlobalIDString = B60550AC1F054D7E00939165;
 			remoteInfo = FritterApp;
 		};
+		B6B3F1CA1F42666E00AF3E6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6B3F1C51F42666E00AF3E6D /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE45519693E190098E6F3;
+			remoteInfo = CryptoSwift;
+		};
+		B6B3F1CC1F42666E00AF3E6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6B3F1C51F42666E00AF3E6D /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE46019693E190098E6F3;
+			remoteInfo = Tests;
+		};
+		B6B3F1CE1F42677300AF3E6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6B3F1C51F42666E00AF3E6D /* CryptoSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 754BE45419693E190098E6F3;
+			remoteInfo = CryptoSwift;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +74,8 @@
 		B60550CC1F054D7E00939165 /* FritterAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FritterAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60550D01F054D7E00939165 /* FritterAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FritterAppUITests.swift; sourceTree = "<group>"; };
 		B60550D21F054D7E00939165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6B3F1C31F42661400AF3E6D /* CryptoSwift-master */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "CryptoSwift-master"; path = "../../Documents/CryptoSwift-master"; sourceTree = "<group>"; };
+		B6B3F1C51F42666E00AF3E6D /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = "../../Documents/CryptoSwift-master/CryptoSwift.xcodeproj"; sourceTree = "<group>"; };
 		B6D009CA1F0FE3ED00CFF176 /* Registration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		B6D009CC1F0FE96200CFF176 /* NewsFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
 		B6D009CE1F0FEB6000CFF176 /* SearchFriend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFriend.swift; sourceTree = "<group>"; };
@@ -62,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B3F1C41F42661400AF3E6D /* CryptoSwift-master in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,10 +110,12 @@
 		B60550A41F054D7E00939165 = {
 			isa = PBXGroup;
 			children = (
+				B6B3F1C51F42666E00AF3E6D /* CryptoSwift.xcodeproj */,
 				B60550AF1F054D7E00939165 /* FritterApp */,
 				B60550C41F054D7E00939165 /* FritterAppTests */,
 				B60550CF1F054D7E00939165 /* FritterAppUITests */,
 				B60550AE1F054D7E00939165 /* Products */,
+				B6B3F1C21F42661300AF3E6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +164,23 @@
 			path = FritterAppUITests;
 			sourceTree = "<group>";
 		};
+		B6B3F1C21F42661300AF3E6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6B3F1C31F42661400AF3E6D /* CryptoSwift-master */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6B3F1C61F42666E00AF3E6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6B3F1CB1F42666E00AF3E6D /* CryptoSwift.framework */,
+				B6B3F1CD1F42666E00AF3E6D /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +195,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B6B3F1CF1F42677300AF3E6D /* PBXTargetDependency */,
 			);
 			name = FritterApp;
 			productName = FritterApp;
@@ -230,6 +275,12 @@
 			mainGroup = B60550A41F054D7E00939165;
 			productRefGroup = B60550AE1F054D7E00939165 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B6B3F1C61F42666E00AF3E6D /* Products */;
+					ProjectRef = B6B3F1C51F42666E00AF3E6D /* CryptoSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B60550AC1F054D7E00939165 /* FritterApp */,
@@ -238,6 +289,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B6B3F1CB1F42666E00AF3E6D /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = B6B3F1CA1F42666E00AF3E6D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B6B3F1CD1F42666E00AF3E6D /* Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.xctest;
+			remoteRef = B6B3F1CC1F42666E00AF3E6D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B60550AB1F054D7E00939165 /* Resources */ = {
@@ -308,6 +376,11 @@
 			isa = PBXTargetDependency;
 			target = B60550AC1F054D7E00939165 /* FritterApp */;
 			targetProxy = B60550CD1F054D7E00939165 /* PBXContainerItemProxy */;
+		};
+		B6B3F1CF1F42677300AF3E6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoSwift;
+			targetProxy = B6B3F1CE1F42677300AF3E6D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

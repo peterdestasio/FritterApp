@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CryptoSwift
 
 class Registration: UIViewController {
 
@@ -59,6 +60,8 @@ class Registration: UIViewController {
         let creditCardNumber = creditCardNumberTextField.text!
         let ccv = ccvTextField.text!
         
+        let userPasswordHashed = userPassword.md5()
+        
         
         //Create a NSURL
         let requestURL = NSURL(string: URL_INSERT)
@@ -70,7 +73,7 @@ class Registration: UIViewController {
         request.httpMethod = "POST"
         
         //create the POST parameter by concatenating the keys and values from TET-field
-        let postParameter = "user_name=\(userName)&user_email=\(userEmail)&user_pass=\(userPassword)&first_name=\(firstName)&last_name=\(lastName)&birthday=\(birthday)&city=\(city)&credit_card=\(creditCardNumber)&ccv=\(ccv)"
+        let postParameter = "user_name=\(userName)&user_email=\(userEmail)&user_pass=\(userPasswordHashed)&first_name=\(firstName)&last_name=\(lastName)&birthday=\(birthday)&city=\(city)&credit_card=\(creditCardNumber)&ccv=\(ccv)"
         request.httpBody = postParameter.data(using: String.Encoding.utf8)
         
             // Create a TASK to send the POST request
