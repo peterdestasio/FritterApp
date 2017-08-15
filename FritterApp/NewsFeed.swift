@@ -56,4 +56,14 @@ class NewsFeed: UIViewController {
         navigationController?.pushViewController(searchFriendController, animated: true)
     }
 
+    
+    @IBAction func checkGov(_ sender: Any) {
+        
+        let checkGovController = storyboard?.instantiateViewController(withIdentifier: "checkGovViewControllerID") as! CheckGovViewController
+        
+        checkGovController.nameToCheck = name
+        checkGovController.surnameToCheck = surname
+       
+        navigationController?.pushViewController(checkGovController, animated: true)
+    }
 }

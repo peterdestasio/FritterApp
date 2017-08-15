@@ -15,6 +15,7 @@
 		B60550BB1F054D7E00939165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60550B91F054D7E00939165 /* LaunchScreen.storyboard */; };
 		B60550C61F054D7E00939165 /* FritterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60550C51F054D7E00939165 /* FritterAppTests.swift */; };
 		B60550D11F054D7E00939165 /* FritterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60550D01F054D7E00939165 /* FritterAppUITests.swift */; };
+		B6209F551F428DCA00DDFA4D /* CheckGovViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6209F541F428DCA00DDFA4D /* CheckGovViewController.swift */; };
 		B6B3F1C41F42661400AF3E6D /* CryptoSwift-master in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B3F1C31F42661400AF3E6D /* CryptoSwift-master */; settings = {ATTRIBUTES = (Required, ); }; };
 		B6D009CB1F0FE3ED00CFF176 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D009CA1F0FE3ED00CFF176 /* Registration.swift */; };
 		B6D009CD1F0FE96200CFF176 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D009CC1F0FE96200CFF176 /* NewsFeed.swift */; };
@@ -74,6 +75,7 @@
 		B60550CC1F054D7E00939165 /* FritterAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FritterAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60550D01F054D7E00939165 /* FritterAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FritterAppUITests.swift; sourceTree = "<group>"; };
 		B60550D21F054D7E00939165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6209F541F428DCA00DDFA4D /* CheckGovViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckGovViewController.swift; sourceTree = "<group>"; };
 		B6B3F1C31F42661400AF3E6D /* CryptoSwift-master */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "CryptoSwift-master"; path = "../../Documents/CryptoSwift-master"; sourceTree = "<group>"; };
 		B6B3F1C51F42666E00AF3E6D /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = "../../Documents/CryptoSwift-master/CryptoSwift.xcodeproj"; sourceTree = "<group>"; };
 		B6D009CA1F0FE3ED00CFF176 /* Registration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				B60550B71F054D7E00939165 /* Assets.xcassets */,
 				B60550B91F054D7E00939165 /* LaunchScreen.storyboard */,
 				B60550BC1F054D7E00939165 /* Info.plist */,
+				B6209F541F428DCA00DDFA4D /* CheckGovViewController.swift */,
 			);
 			path = FritterApp;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				B604528D1F3AA92D005D9EA1 /* FriendTableViewCell.swift in Sources */,
 				B6D009CD1F0FE96200CFF176 /* NewsFeed.swift in Sources */,
 				B60550B11F054D7E00939165 /* AppDelegate.swift in Sources */,
+				B6209F551F428DCA00DDFA4D /* CheckGovViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
